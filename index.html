@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نمونه کار من | My Portfolio</title>
+
+    <!-- Meta Tags -->
+    <meta
+      name="description"
+      content="Portfolio website showcasing my web development projects"
+    />
+    <meta name="keywords" content="web developer, portfolio, projects" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/ main.css" />
+    <link rel="stylesheet" href="css/themes.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body data-lang="fa" data-theme="light">
+    <!-- Control Buttons -->
+    <div class="control-buttons">
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <span class="theme-icon">🌓</span>
+        <span class="fa">تغییر تم</span>
+        <span class="en">Theme</span>
+      </button>
+      <button class="lang-toggle" onclick="toggleLang()">
+        <span class="fa">EN</span>
+        <span class="en">فا</span>
+      </button>
+    </div>
+
+    <div class="container">
+      <!-- Header Section -->
+      <header>
+        <img
+          src="assets/images/prof.jpg"
+          alt="Profile Photo"
+          class="profile-img"
+        />
+        <div class="fa">
+          <h1 class="hero-title animated-text">یاسین ضیائی زاده</h1>
+          <p class="highlight-text">توسعه‌دهنده وب</p>
+          <p class="small-text">متخصص در طراحی و توسعه وب‌سایت‌های مدرن</p>
+        </div>
+        <div class="en">
+          <h1 class="hero-title animated-text">yasin ziyai zadeh</h1>
+          <p class="highlight-text">Web Developer</p>
+          <p class="small-text">Specialized in Modern Web Development</p>
+        </div>
+        <div style="margin-top: 1rem">
+          <a href="mailto:your.email@example.com" class="btn">
+            <span class="fa">تماس با من</span>
+            <span class="en">Contact Me</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- Skills Section -->
+      <section class="skills">
+        <div class="fa">
+          <h2>مهارت‌های من</h2>
+        </div>
+        <div class="en">
+          <h2>My Skills</h2>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">React native</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Shadcn</span>
+          <span class="skill-tag">Material ui</span>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <img
+            src="assets/images/projects/project1.jpg"
+            alt="Project 1"
+            class="project-img"
+          />
+          <div class="project-info">
+            <div class="fa">
+              <h3>پروژه اول</h3>
+              <p>
+                توضیحات پروژه اول که شامل تکنولوژی‌های استفاده شده و هدف پروژه
+                می‌باشد.
+              </p>
+              <a href="#" class="btn">مشاهده پروژه</a>
+            </div>
+            <div class="en">
+              <h3>First Project</h3>
+              <p>
+                Description of the first project including technologies used and
+                project goals.
+              </p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <img
+            src="assets/images/projects/project2.jpg"
+            alt="Project 2"
+            class="project-img"
+          />
+          <div class="project-info">
+            <div class="fa">
+              <h3>پروژه دوم</h3>
+              <p>
+                توضیحات پروژه دوم که شامل تکنولوژی‌های استفاده شده و هدف پروژه
+                می‌باشد.
+              </p>
+              <a href="#" class="btn">مشاهده پروژه</a>
+            </div>
+            <div class="en">
+              <h3>Second Project</h3>
+              <p>
+                Description of the second project including technologies used
+                and project goals.
+              </p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/theme-switcher.js"></script>
+    <script src="js/lang-switcher.js"></script>
+  </body>
+</html>

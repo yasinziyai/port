@@ -1,0 +1,80 @@
+/* Desktop First Approach */
+
+/* Large Devices (less than 1200px) */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    padding: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Medium Devices (less than 992px) */
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Small Devices (less than 768px) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .control-buttons {
+    top: 10px;
+    left: 10px;
+  }
+
+  .theme-toggle,
+  .lang-toggle {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .skill-tags {
+    gap: 0.5rem;
+  }
+
+  .skill-tag {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra Small Devices (less than 576px) */
+@media (max-width: 576px) {
+  .container {
+    padding: 0.8rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    margin-bottom: 1.5rem;
+  }
+}
