@@ -29,11 +29,14 @@
   <body data-lang="fa" data-theme="light">
     <!-- Control Buttons -->
     <div class="control-buttons">
-      <button class="theme-toggle" onclick="toggleTheme()">
+      <!-- در index.html -->
+      <button class="theme-toggle" onclick="toggleTheme()" id="themeButton">
         <span class="theme-icon">🌓</span>
-        <span class="fa">تغییر تم</span>
-        <span class="en">Theme</span>
+
+        <span class="fa theme-text"></span>
+        <span class="en theme-text"></span>
       </button>
+
       <button class="lang-toggle" onclick="toggleLang()">
         <span class="fa">EN</span>
         <span class="en">فا</span>
@@ -58,11 +61,35 @@
           <p class="highlight-text">Web Developer</p>
           <p class="small-text">Specialized in Modern Web Development</p>
         </div>
-        <div style="margin-top: 1rem">
-          <a href="mailto:your.email@example.com" class="btn">
-            <span class="fa">تماس با من</span>
-            <span class="en">Contact Me</span>
-          </a>
+        <!-- بخش تماس در header -->
+        <div class="contact-info">
+          <!-- نسخه فارسی -->
+          <div class="fa">
+            <div class="contact-items">
+              <a href="tel:+989016419893" class="contact-item">
+                <span class="icon">📱</span>
+                <span class="text">۰۹۰۱۶۴۱۹۸۹۳</span>
+              </a>
+              <a href="mailto:yasinziyai81@gmail.com" class="contact-item">
+                <span class="icon">📧</span>
+                <span class="text">yasinziyai81@gmail.com</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- نسخه انگلیسی -->
+          <div class="en">
+            <div class="contact-items">
+              <a href="tel:+989016419893" class="contact-item">
+                <span class="icon">📱</span>
+                <span class="text">+98 901 641 9893</span>
+              </a>
+              <a href="mailto:yasinziyai81@gmail.com" class="contact-item">
+                <span class="icon">📧</span>
+                <span class="text">yasinziyai81@gmail.com</span>
+              </a>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -81,7 +108,6 @@
           <span class="skill-tag">React</span>
           <span class="skill-tag">Node.js</span>
           <span class="skill-tag">Git</span>
-          <span class="skill-tag">Responsive Design</span>
           <span class="skill-tag">Next.js</span>
           <span class="skill-tag">React native</span>
           <span class="skill-tag">Bootstrap</span>
@@ -94,54 +120,100 @@
       <section class="projects">
         <!-- Project Card 1 -->
         <div class="project-card">
-          <img
+          <!-- <img
             src="assets/images/projects/project1.jpg"
             alt="Project 1"
             class="project-img"
-          />
+          /> -->
           <div class="project-info">
             <div class="fa">
-              <h3>پروژه اول</h3>
+              <h3>املاک</h3>
               <p>
-                توضیحات پروژه اول که شامل تکنولوژی‌های استفاده شده و هدف پروژه
-                می‌باشد.
+                • توسعه داده شده با React.js
+                <br />
+                • دیپلوی شده روی پلتفرم Vercel
+                <br />
+                • پیاده‌سازی رابط کاربری واکنش‌گرا (Responsive UI)
+                <br />
+                • امکان مشاهده جزئیات کامل هر ملک
+                <br />
+                • رابط کاربری مدرن و کاربرپسند
+                <br />
+                • بهینه‌سازی عملکرد و زمان بارگذاری
+                <br />
+                • داشتن پنل ادمین برای اضافه کردن اگهی در سایت
+                <br />
+                • برخورداری از فرم لاگین برای و استفاده از داشبورد
               </p>
-              <a href="#" class="btn">مشاهده پروژه</a>
+              <a
+                target="_blank"
+                href="https://real-state-app-main2.vercel.app/"
+                class="btn"
+                >مشاهده پروژه</a
+              >
             </div>
             <div class="en">
-              <h3>First Project</h3>
+              <h3>Real State</h3>
               <p>
-                Description of the first project including technologies used and
-                project goals.
+                - Developed with React.js
+                <br />
+
+                - Deployed on Vercel platform
+                <br />
+
+                - Implemented responsive user interface
+                <br />
+
+                • Multi-parameter filtering system for property search
+                <br />
+
+                • Detailed property viewing functionality
+                <br />
+
+                • Modern and user-friendly interface
+                <br />
+
+                • Performance and loading time optimization
+                <br />
               </p>
-              <a href="#" class="btn">View Project</a>
+              <a
+                target="_blank"
+                href="https://real-state-app-main2.vercel.app/"
+                class="btn"
+                >View Project</a
+              >
             </div>
           </div>
         </div>
 
         <!-- Project Card 2 -->
         <div class="project-card">
-          <img
-            src="assets/images/projects/project2.jpg"
-            alt="Project 2"
-            class="project-img"
-          />
           <div class="project-info">
             <div class="fa">
-              <h3>پروژه دوم</h3>
+              <h3>دستور پخت</h3>
               <p>
                 توضیحات پروژه دوم که شامل تکنولوژی‌های استفاده شده و هدف پروژه
                 می‌باشد.
               </p>
-              <a href="#" class="btn">مشاهده پروژه</a>
+              <a
+                target="_blank"
+                href="https://recipe-app-rho-taupe.vercel.app/"
+                class="btn"
+                >مشاهده پروژه</a
+              >
             </div>
             <div class="en">
-              <h3>Second Project</h3>
+              <h3>Recipe</h3>
               <p>
                 Description of the second project including technologies used
                 and project goals.
               </p>
-              <a href="#" class="btn">View Project</a>
+              <a
+                target="_blank"
+                href="https://recipe-app-rho-taupe.vercel.app/"
+                class="btn"
+                >View Project</a
+              >
             </div>
           </div>
         </div>

@@ -54,3 +54,14 @@ function isElementInViewport(element) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  // بررسی تم ذخیره شده
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    // بررسی تم سیستم عامل
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+});
