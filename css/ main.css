@@ -269,6 +269,7 @@ header {
   border-radius: 20px;
   font-size: 0.9rem;
   transition: all 0.3s ease;
+  font-family: var(--font-primary-en);
 }
 
 .skill-tag:hover {
@@ -279,10 +280,11 @@ header {
 
 /* Projects Section */
 .projects {
-  display: grid;
+  /* display: flex; */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
+  flex-direction: column;
 }
 
 .project-card {
@@ -293,6 +295,7 @@ header {
   transition: transform 0.3s ease;
   opacity: 0;
   animation: slideUp 0.5s ease-out forwards;
+  margin-top: 1rem;
 }
 
 .project-card:hover {
